@@ -2231,7 +2231,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+
 }
 
 .icon-glass {
@@ -4251,7 +4251,7 @@ button.btn.btn-mini, input[type=submit].btn.btn-mini {
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);*
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 
 .navbar-inner:before,
