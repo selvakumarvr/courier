@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  protect_from_forgery
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
  before_action  :authenticate, except: [:create]
   # GET /contacts
@@ -24,7 +25,30 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
+    
+Mail.defaults do
+  delivery_method :smtp, { :address   => "smtp.sendgrid.net",
+                           :port      => 587,
+                           :domain    => "heroku.com",
+                           :user_name => "selvakumarvr",
+                           :password  => "vr14021980",
+                           :authentication => 'plain',
+                           :enable_starttls_auto => true }
+end
     @contact = Contact.new(contact_params)
+    
+   @contact.message
+      mail = Mail.deliver(@contact) do
+  to 'selvakumarvr@gmail.com'
+  from 'Your Name <name@domain.com>'
+  subject 'This is the subject of your email'
+
+  html_part do
+    content_type 'text/html; charset=UTF-8'
+    body  @contact
+  end
+end
+
 
     respond_to do |format|
       if @contact.save

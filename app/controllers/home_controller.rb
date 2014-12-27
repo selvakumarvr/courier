@@ -3,6 +3,6 @@ class HomeController < ApplicationController
        @contact = Contact.new
   end
 
-  def help
+  def about
   end
 end
