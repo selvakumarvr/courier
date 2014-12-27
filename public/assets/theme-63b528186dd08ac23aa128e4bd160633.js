@@ -1,0 +1,1 @@
+!function(o){o("#myCarousel").carousel()}(window.jQuery),!function(o){o("#myCarousel2").carousel()}(window.jQuery);
