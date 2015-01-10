@@ -1,6 +1,8 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
  before_action  :authenticate, except: [:create]
+  protect_from_forgery with: :null_session
+  skip_before_filter  :verify_authenticity_token
   # GET /contacts
   # GET /contacts.json
   def index
@@ -21,7 +23,15 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
 
-    @contact = Contact.new(contact_params)
+    logger.debug "New article: #{params['contact[name]']}"
+
+    logger.debug "New article: #{params['contact[email]']}"
+    logger.debug "New article: #{params['contact[phone]']}"
+    logger.debug "New article: #{params['contact[message]']}"
+
+
+    @contact = Contact.new(params['contact'] )
+    logger.debug "New article: #{@contact.attributes.inspect}"
 
     respond_to do |format|
       if @contact.save
@@ -66,6 +76,7 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
+
       params.require(:contact).permit(:name, :email, :phone, :message)
     end
     
