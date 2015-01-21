@@ -3,6 +3,8 @@ class ContactsController < ApplicationController
  before_action  :authenticate, except: [:create]
   protect_from_forgery with: :null_session
   skip_before_filter  :verify_authenticity_token
+
+
   # GET /contacts
   # GET /contacts.json
   def index
@@ -23,15 +25,35 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
 
-    logger.debug "New article: #{params['contact[name]']}"
+Mail.defaults do
+  delivery_method :smtp, { :address   => "smtp.sendgrid.net",
+                           :port      => 587,
+                           :domain    => "heroku.com",
+                           :user_name => "selvakumarvr",
+                           :password  => "vr14021980",
+                           :authentication => 'plain',
+                           :enable_starttls_auto => true }
+end
+    @contact = Contact.new(contact_params)
 
-    logger.debug "New article: #{params['contact[email]']}"
-    logger.debug "New article: #{params['contact[phone]']}"
-    logger.debug "New article: #{params['contact[message]']}"
+  
+     @message = params[:message]
 
 
-    @contact = Contact.new(params['contact'] )
-    logger.debug "New article: #{@contact.attributes.inspect}"
+
+
+
+@contact.message
+      mail = Mail.deliver(@contact) do
+  to 'selvakumarvr@gmail.com'
+  from 'Your Name <name@domain.com>'
+  subject 'This is the subject of your email'
+
+  html_part do
+    content_type 'text/html; charset=UTF-8'
+    body  @message.to_s
+  end
+end
 
     respond_to do |format|
       if @contact.save
