@@ -34,25 +34,16 @@ Mail.defaults do
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end
-    @contact = Contact.new(contact_params)
 
-  
-     @message = params[:message]
-
+    contact1 = Contact.new(contact_params)
+  @contact = Contact.new
 
 
-
-
-@contact.message
-      mail = Mail.deliver(@contact) do
+Mail.deliver do
   to 'selvakumarvr@gmail.com'
-  from 'Your Name <name@domain.com>'
-  subject 'This is the subject of your email'
-
-  html_part do
-    content_type 'text/html; charset=UTF-8'
-    body  @message.to_s
-  end
+  from contact1.email
+  subject 'Mail from '+ contact1.email
+  body contact1.message
 end
 
     respond_to do |format|
@@ -100,6 +91,7 @@ end
     def contact_params
 
       params.require(:contact).permit(:name, :email, :phone, :message)
+
     end
     
      def authenticate
