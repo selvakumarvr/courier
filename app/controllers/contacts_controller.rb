@@ -42,7 +42,7 @@ end
 Mail.deliver do
   to 'selvakumarvr@gmail.com'
   from contact1.email
-  subject 'Mail from '+ contact1.email
+  subject ' Project request from '+ contact1.email
   body contact1.message
 end
 
