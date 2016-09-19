@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eed6d68-7d51-47ff-9172-8901427356c6" name="Default" comment="" />
+    <list default="true" id="8eed6d68-7d51-47ff-9172-8901427356c6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/business-frontpage.css" afterPath="$PROJECT_DIR$/app/assets/css/business-frontpage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/home.html.erb" afterPath="$PROJECT_DIR$/app/views/home/home.html.erb" />
+    </list>
     <ignored path="myprotfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,8 +31,8 @@
       <file leaf-file-name="home.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="1590" max-vertical-offset="2490">
-              <caret line="116" column="34" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="34" />
+            <state vertical-scroll-proportion="-28.2" vertical-offset="390" max-vertical-offset="2490">
+              <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -75,20 +78,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="business-frontpage.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="business-frontpage.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/css/business-frontpage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="615">
+            <state vertical-scroll-proportion="0.4279661" vertical-offset="143" max-vertical-offset="615">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.717489" vertical-offset="0" max-vertical-offset="8130">
+            <state vertical-scroll-proportion="-98.07692" vertical-offset="0" max-vertical-offset="8130">
               <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
               <folding />
             </state>
@@ -300,6 +303,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myprotfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="courier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -931,6 +956,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-98.07692" vertical-offset="0" max-vertical-offset="8130">
+          <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.2" vertical-offset="390" max-vertical-offset="2490">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="16710">
@@ -939,26 +980,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="1590" max-vertical-offset="2490">
-          <caret line="116" column="34" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/business-frontpage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="615">
+        <state vertical-scroll-proportion="0.4279661" vertical-offset="143" max-vertical-offset="615">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.717489" vertical-offset="0" max-vertical-offset="8130">
-          <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
           <folding />
         </state>
       </provider>
