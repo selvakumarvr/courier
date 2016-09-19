@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eed6d68-7d51-47ff-9172-8901427356c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/business-frontpage.css" afterPath="$PROJECT_DIR$/app/assets/css/business-frontpage.css" />
-    </list>
+    <list default="true" id="8eed6d68-7d51-47ff-9172-8901427356c6" name="Default" comment="" />
     <ignored path="myprotfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -90,7 +88,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90358746" vertical-offset="2147" max-vertical-offset="8130">
+            <state vertical-scroll-proportion="5.717489" vertical-offset="0" max-vertical-offset="8130">
               <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
               <folding />
             </state>
@@ -959,7 +957,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90358746" vertical-offset="2147" max-vertical-offset="8130">
+        <state vertical-scroll-proportion="5.717489" vertical-offset="0" max-vertical-offset="8130">
           <caret line="170" column="1" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
           <folding />
         </state>
